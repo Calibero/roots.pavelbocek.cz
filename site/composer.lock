@@ -4,8 +4,111 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "327dfc5c0193e2ce0d98bd111f24fab8",
+    "content-hash": "21a59b3ea2ea938dcf62e42c15bbb122",
     "packages": [
+        {
+            "name": "afragen/github-updater",
+            "version": "7.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afragen/github-updater.git",
+                "reference": "f075d023c463671906137a7202316e034c03a1be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afragen/github-updater/zipball/f075d023c463671906137a7202316e034c03a1be",
+                "reference": "f075d023c463671906137a7202316e034c03a1be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Fragen",
+                    "email": "andy@thefragens.com",
+                    "homepage": "https://thefragens.com",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "install",
+                "plugin",
+                "theme",
+                "updater",
+                "wordpress"
+            ],
+            "time": "2018-01-28T18:04:15+00:00"
+        },
+        {
+            "name": "andrewexton373/wp-sync-db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrewexton373/wp-sync-db.git",
+                "reference": "fb66e46b716ef47148527e28a877cb559a1fc8cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrewexton373/wp-sync-db/zipball/fb66e46b716ef47148527e28a877cb559a1fc8cf",
+                "reference": "fb66e46b716ef47148527e28a877cb559a1fc8cf",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.4"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "WP Sync DB eliminates the manual work of migrating a WP database.",
+            "homepage": "https://github.com/wp-sync-db/wp-sync-db",
+            "keywords": [
+                "db",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "time": "2017-11-02 22:38:06"
+        },
+        {
+            "name": "andrewexton373/wp-sync-db-media-files",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrewexton373/wp-sync-db-media-files.git",
+                "reference": "7906e4ab110a5201103a9792b5b8d0db1feabd04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrewexton373/wp-sync-db-media-files/zipball/7906e4ab110a5201103a9792b5b8d0db1feabd04",
+                "reference": "7906e4ab110a5201103a9792b5b8d0db1feabd04",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.4"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "WP Sync DB Media File Addon for WP Sync DB",
+            "homepage": "https://github.com/wp-sync-db/wp-sync-db-media-files",
+            "keywords": [
+                "media",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "time": "2017-11-02 20:33:33"
+        },
         {
             "name": "composer/installers",
             "version": "v1.5.0",
@@ -458,9 +561,12 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "andrewexton373/wp-sync-db": 20,
+        "andrewexton373/wp-sync-db-media-files": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6"
